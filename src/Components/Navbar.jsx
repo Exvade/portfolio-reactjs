@@ -9,7 +9,7 @@ function Navbar() {
   };
 
   return (
-    <header className="absolute top-0 left-0 z-10 flex items-center w-full overflow-hidden bg-transparent">
+    <header className="absolute top-0 left-0 z-10 flex items-center w-full bg-transparent">
       <div className="container">
         <div className="relative flex items-center justify-between">
           <div className="px-4 animate__animated animate__fadeInLeft">
@@ -34,16 +34,16 @@ function Navbar() {
             >
               <ul className="block lg:flex">
                 <li className="group">
-                  <a href="#home" className="flex py-2 mx-8 text-base font-medium text-dark group-hover:text-primary">Home</a>
+                  <a href="#home" className="flex py-2 mx-8 text-base text-dark group-hover:text-primary">Home</a>
                 </li>
                 <li className="group">
-                  <a href="#about" className="flex py-2 mx-8 text-base font-medium text-dark group-hover:text-primary">About Me</a>
+                  <a href="#about" className="flex py-2 mx-8 text-base text-dark group-hover:text-primary">About Me</a>
                 </li>
                 <li className="group">
-                  <a href="#projects" className="flex py-2 mx-8 text-base font-medium text-dark group-hover:text-primary">Projects</a>
+                  <a href="#projects" className="flex py-2 mx-8 text-base text-dark group-hover:text-primary">Projects</a>
                 </li>
                 <li className="group">
-                  <a href="#contact" className="flex py-2 mx-8 text-base font-medium text-dark group-hover:text-primary">Contact</a>
+                  <a href="#contact" className="flex py-2 mx-8 text-base text-dark group-hover:text-primary">Contact</a>
                 </li>
               </ul>
             </nav>
