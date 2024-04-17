@@ -1,7 +1,25 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import 'animate.css';
 
 function Navbar() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector('header');
+      const fixedNav = header.offsetTop;
+
+      if (window.pageYOffset > fixedNav) {
+        header.classList.add('navbar-fixed');
+      } else {
+        header.classList.remove('navbar-fixed');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
 
   const toggleNavMenu = () => {
