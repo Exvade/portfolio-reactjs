@@ -1,6 +1,6 @@
 import Dep from '../img/dep.jpg'
 import ChatBot from '../img/chatbot.png';
-export default function AboutMe() {
+export default function Me() {
   return (
     <div className="self-center bg-blue-200 rounded-lg lg:bg-transparent lg:w-[80%] mx-auto">
       <div className="lg:flex lg:justify-center lg:items-center">
