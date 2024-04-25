@@ -1,8 +1,15 @@
-import Dep from '../img/dep.jpg'
+import Dep from '../img/dep.jpg';
 import ChatBot from '../img/chatbot.png';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 export default function Me() {
+  useEffect(()=> {
+    Aos.init({duration: 1000})
+  }, [])
   return (
-    <div className="self-center bg-blue-200 rounded-lg lg:bg-transparent lg:w-[80%] mx-auto">
+    <div className="self-center bg-blue-200 rounded-lg lg:bg-transparent lg:w-[80%] mx-auto" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
       <div className="lg:flex lg:justify-center lg:items-center">
         <img src={ChatBot} alt="Chatbot" className="hidden w-14 lg:block lg:mx-2 lg:animate-bounce" />
         <h4 className="px-4 pt-4 text-xl font-semibold text-dark lg:p-0 lg:text-4xl">About Me</h4>
