@@ -22,9 +22,7 @@ export default function LangTools() {
         <img src={stick} alt="" width="40" className="mr-1" />
         <h4 className="text-xl font-semibold text-dark">Language & Tools</h4>
       </div>
-      <Buttons
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom" 
+      <Buttons 
         menuItems = {menuItems}
         filterItems = {filterItems}
         setItems = {setItems}

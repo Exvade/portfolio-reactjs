@@ -1,9 +1,16 @@
 /* eslint-disable react/prop-types */
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 export default function Project({item}){
+  useEffect(()=> {
+    Aos.init({duration: 1000})
+  }, [])
   return(
     <div className="grid grid-cols-1 gap-2 px-6 mt-6 lg:grid-cols-2 lg:gap-5">
       {item.map((val) => (
-        <a href={val.link} target="_blank" className="mb-5 overflow-hidden transition-all duration-300 bg-white rounded-md shadow-lg sm:mb-0 group" key={val.id}>
+        <a href={val.link} target="_blank" className="mb-5 overflow-hidden transition-all duration-300 bg-white rounded-md shadow-lg sm:mb-0 group" key={val.id} data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
         <img src={val.img} alt="Image caption" className="object-cover object-top w-full aspect-video" />
         <div className="flex flex-col px-4 py-4">
           <h2 className="font-semibold" style={{ color: val.titleColor }}>{val.title}</h2>

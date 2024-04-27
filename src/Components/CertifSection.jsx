@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 export default function CertifSection() {
   useEffect(()=> {
-    Aos.init({duration: 1000})
+    Aos.init({duration: 500})
   }, [])
   const item = CerData
   return (
