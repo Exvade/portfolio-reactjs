@@ -10,7 +10,7 @@ export default function Works(){
     Aos.init({duration: 500})
   }, [])
   return (
-    <section id="project" className="pt-16 pb-24">
+    <section id="projects" className="pt-24 pb-24">
       <div className="container">
         <div className="self-center">
           <div className="flex items-center px-4" data-aos="fade-right">
