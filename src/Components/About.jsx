@@ -1,6 +1,6 @@
-import Me from './Me';
-import LangTools from './LangTools';
 import CertifSection from './CertifSection';
+import LangTools from './LangTools';
+import Me from './Me';
 export default function About() {
   return (
     <section id="about" className="pb-5 pt-28">
