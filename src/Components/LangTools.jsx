@@ -1,11 +1,10 @@
-import { useState } from "react"
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect, useState } from "react"
 import Data from "../Data"
 import stick from "../img/stick.png"
-import SkillCard from "./SkillCard"
 import Buttons from "./Buttons"
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import SkillCard from "./SkillCard"
 export default function LangTools() {
   const [item, setItems] = useState(Data)
   const menuItems = [...new Set(Data.map((val) => val.category))]
