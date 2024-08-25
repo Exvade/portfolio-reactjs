@@ -1,10 +1,9 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
-import { useState } from "react";
-import Data from "../Data";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from "react";
+import Data from "../Data";
 
 export default function Buttons({ menuItems, filterItems, setItems }) {
   const [activeButton, setActiveButton] = useState(null);
