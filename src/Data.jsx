@@ -1,8 +1,8 @@
-import html from "./img/html.jpg"
+import bootstrap from "./img/bootstrap.png"
 import css from "./img/css.png"
+import html from "./img/html.jpg"
 import javascript from "./img/javascript.png"
 import tailwind from "./img/tailwind.jpg"
-import bootstrap from "./img/bootstrap.png"
 const Data = [
   {
     id: "1",
@@ -80,6 +80,13 @@ const Data = [
     logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
     category: "Web Development",
     border: "#00758F",
+  },
+  {
+    id: "13",
+    title: "Notion",
+    logo: "https://skillicons.dev/icons?i=notion&theme=light",
+    category: "Application",
+    border: "#000000",
   },
 ];
 
