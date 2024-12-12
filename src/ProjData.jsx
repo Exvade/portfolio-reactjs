@@ -1,13 +1,15 @@
-import html from './img/html.jpg'
 import css from './img/css.png'
-import js from './img/javascript.png'
-import tailwind from './img/tailwind.jpg'
-import react from './img/react.png'
 import flowbite from './img/flowbite.png'
+import html from './img/html.jpg'
+import js from './img/javascript.png'
 import Attendance from './img/project-img/absen.png'
-import Porfolio from './img/project-img/portfolio.png'
-import CareerSync from './img/project-img/career-sync.png'
+import AgencyFolio from './img/project-img/agencyfolio.png'
 import BuenozPizza from './img/project-img/buenos.png'
+import CareerSync from './img/project-img/career-sync.png'
+import Porfolio from './img/project-img/portfolio.png'
+import ShopSphere from './img/project-img/shopsphere.png'
+import react from './img/react.png'
+import tailwind from './img/tailwind.jpg'
 
 const ProjData = [
   {
@@ -23,15 +25,16 @@ const ProjData = [
   },
   {
     id: "2",
-    link: "#",
-    img: Porfolio,
-    title: "Portfolio Website",
-    titleColor: "#3b82f6",
-    category: "Landing Page",
+    link: "https://buenos-pizza.netlify.app/",
+    img: BuenozPizza,
+    title: "Buenoz Pizza",
+    titleColor: "#AB3D2B",
+    category: "E-Commerce Website",
     tech1: html,
     tech2: tailwind,
     tech3: js,
   },
+
   {
     id: "3",
     link: "https://careersync.netlify.app/",
@@ -45,15 +48,39 @@ const ProjData = [
   },
   {
     id: "4",
-    link: "https://buenos-pizza.netlify.app/",
-    img: BuenozPizza,
-    title: "Buenoz Pizza",
-    titleColor: "#AB3D2B",
-    category: "E-Commerce Website",
+    link: "#",
+    img: Porfolio,
+    title: "Portfolio Website",
+    titleColor: "#3b82f6",
+    category: "Landing Page",
     tech1: html,
     tech2: tailwind,
     tech3: js,
   },
+  {
+    id: "5",
+    link: "#",
+    img: ShopSphere,
+    title: "E-Commerce Website",
+    titleColor: "#3b82f6",
+    category: "Landing Page",
+    tech1: react,
+    tech2: tailwind,
+    tech3: flowbite,
+  },
+  {
+    id: "6",
+    link: "#",
+    img: AgencyFolio,
+    title: "Portfolio Website",
+    titleColor: "#3b82f6",
+    category: "Landing Page",
+    tech1: react,
+    tech2: tailwind,
+    tech3: flowbite,
+  },
+
+
 ]
 
 export default ProjData
