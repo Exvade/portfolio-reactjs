@@ -6,7 +6,7 @@ import Attendance from './img/project-img/absen.png'
 import AgencyFolio from './img/project-img/agencyfolio.png'
 import BuenozPizza from './img/project-img/buenos.png'
 import CareerSync from './img/project-img/career-sync.png'
-import Porfolio from './img/project-img/portfolio.png'
+import Portfolio from './img/project-img/portfolio.png'
 import ShopSphere from './img/project-img/shopsphere.png'
 import react from './img/react.png'
 import tailwind from './img/tailwind.jpg'
@@ -16,9 +16,10 @@ const ProjData = [
     id: "1",
     link: "https://attendance-website.netlify.app/",
     img: Attendance,
+    category: "Website",
     title: "Attendance Website",
     titleColor: "#ef4444",
-    category: "Landing Page",
+    type: "Landing Page",
     tech1: html,
     tech2: css,
     tech3: js,
@@ -27,9 +28,10 @@ const ProjData = [
     id: "2",
     link: "https://buenos-pizza.netlify.app/",
     img: BuenozPizza,
+    category: "Website",
     title: "Buenoz Pizza",
     titleColor: "#AB3D2B",
-    category: "E-Commerce Website",
+    type: "E-Commerce Website",
     tech1: html,
     tech2: tailwind,
     tech3: js,
@@ -39,9 +41,10 @@ const ProjData = [
     id: "3",
     link: "https://careersync.netlify.app/",
     img: CareerSync,
+    category: "Website",
     title: "Career Sync",
     titleColor: "#2C0A55",
-    category: "CRUD Website",
+    type: "CRUD Website",
     tech1: react,
     tech2: tailwind,
     tech3: flowbite,
@@ -49,10 +52,11 @@ const ProjData = [
   {
     id: "4",
     link: "#",
-    img: Porfolio,
+    img: Portfolio,
+    category: "Website",
     title: "Portfolio Website",
     titleColor: "#3b82f6",
-    category: "Landing Page",
+    type: "Landing Page",
     tech1: html,
     tech2: tailwind,
     tech3: js,
@@ -61,9 +65,10 @@ const ProjData = [
     id: "5",
     link: "https://agencyfolio.netlify.app/",
     img: ShopSphere,
-    title: "E-Commerce Website",
+    category: "Website",
+    title: "ShopSphere",
     titleColor: "#f84559",
-    category: "Landing Page",
+    type: "E-Commerce Website",
     tech1: react,
     tech2: tailwind,
     tech3: flowbite,
@@ -72,9 +77,10 @@ const ProjData = [
     id: "6",
     link: "https://agencyfolio.netlify.app/",
     img: AgencyFolio,
+    category: "Website",
     title: "Portfolio Website",
     titleColor: "#7353dc",
-    category: "Landing Page",
+    type: "Landing Page",
     tech1: react,
     tech2: tailwind,
     tech3: flowbite,

@@ -1,30 +1,46 @@
-/* eslint-disable react/prop-types */
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
-export default function Project({item}){
-  useEffect(()=> {
-    Aos.init({duration: 1000})
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
+
+export default function Project({ item }) {
+  useEffect(() => {
+    Aos.init({ duration: 1000 })
   }, [])
-  return(
-    <div className="grid grid-cols-1 gap-2 px-6 mt-6 lg:grid-cols-2 lg:gap-5">
+
+  return (
+    <div className="grid grid-cols-1 gap-4 px-6 mt-6 lg:grid-cols-2 lg:gap-6">
       {item.map((val) => (
-        <a href={val.link} target="_blank" className="mb-5 overflow-hidden transition-all duration-300 bg-white rounded-md shadow-lg sm:mb-0 group" key={val.id} data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom">
-        <img src={val.img} alt="Image caption" className="object-cover object-top w-full aspect-video" />
-        <div className="flex flex-col px-4 py-4">
-          <h2 className="font-semibold" style={{ color: val.titleColor }}>{val.title}</h2>
-          <div className="flex justify-between w-full">
-            <p className="mt-2 text-sm font-medium transition-all duration-300 lg:text-base">{val.category}</p>
-            <div className="flex items-center justify-between w-24">
-              <img src={val.tech1} alt="" width="22" className="aspect-square" />
-              <img src={val.tech2} alt="" width="22" className="" />
-              <img src={val.tech3} alt="" width="21" className="aspect-square" />
+        <a
+          href={val.link}
+          className="block overflow-hidden transition-all duration-300 bg-white shadow-lg rounded-xl group hover:shadow-xl"
+          key={val.id}
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <div className="relative overflow-hidden aspect-video">
+            <img
+              src={val.img}
+              alt={val.title}
+              className="object-cover object-center w-full h-full transition-transform duration-300 group-hover:scale-105"
+            />
+          </div>
+          <div className="p-6">
+            <h2 className="text-xl font-semibold" style={{ color: val.titleColor }}>
+              {val.title}
+            </h2>
+            <p className="mt-2 text-gray-600">{val.subtitle}</p>
+            <div className="flex items-center justify-between mt-4">
+              <p className="text-sm font-medium text-gray-500">{val.type}</p>
+              <div className="flex items-center gap-3">
+                {val.tech1 && <img src={val.tech1} alt="" className="w-6 h-6" />}
+                {val.tech2 && <img src={val.tech2} alt="" className="w-6 h-6" />}
+                {val.tech3 && <img src={val.tech3} alt="" className="w-6 h-6" />}
+              </div>
             </div>
           </div>
-        </div>
-      </a>
+        </a>
       ))}
     </div>
   )
 }
+
