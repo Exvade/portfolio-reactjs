@@ -5,8 +5,6 @@ import js from './img/javascript.png'
 import Attendance from './img/project-img/absen.png'
 import AgencyFolio from './img/project-img/agencyfolio.png'
 import BuenozPizza from './img/project-img/buenos.png'
-import CareerSync from './img/project-img/career-sync.png'
-import Portfolio from './img/project-img/portfolio.png'
 import ShopSphere from './img/project-img/shopsphere.png'
 import react from './img/react.png'
 import tailwind from './img/tailwind.jpg'
@@ -36,34 +34,9 @@ const ProjData = [
     tech2: tailwind,
     tech3: js,
   },
-
-  {
-    id: "3",
-    link: "https://careersync.netlify.app/",
-    img: CareerSync,
-    category: "Website",
-    title: "Career Sync",
-    titleColor: "#2C0A55",
-    type: "CRUD Website",
-    tech1: react,
-    tech2: tailwind,
-    tech3: flowbite,
-  },
-  {
-    id: "4",
-    link: "#",
-    img: Portfolio,
-    category: "Website",
-    title: "Portfolio Website",
-    titleColor: "#3b82f6",
-    type: "Landing Page",
-    tech1: html,
-    tech2: tailwind,
-    tech3: js,
-  },
   {
     id: "5",
-    link: "https://agencyfolio.netlify.app/",
+    link: "https://exv-shopsphere.vercel.app/",
     img: ShopSphere,
     category: "Website",
     title: "ShopSphere",
@@ -90,3 +63,4 @@ const ProjData = [
 ]
 
 export default ProjData
+
