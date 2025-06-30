@@ -9,6 +9,7 @@ import ShopSphere from './img/project-img/shopsphere.png'
 import react from './img/react.png'
 import tailwind from './img/tailwind.jpg'
 import laravel from './img/laravel.png'
+import mysql from './img/mysql.png'
 
 
 const ProjData = [
@@ -22,7 +23,7 @@ const ProjData = [
     type: "Dashboard",
     tech1: laravel,
     tech2: tailwind,
-    tech3: js,
+    tech3: mysql,
   },
   {
     id: "2",
