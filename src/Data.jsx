@@ -88,6 +88,20 @@ const Data = [
     category: "Application",
     border: "#000000",
   },
+  {
+    id: "14",
+    title: "NextJS",
+    logo: "https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg",
+    category: "Web Development",
+    border: "#000000",
+  },
+  {
+    id: "15",
+    title: "Laravel",
+    logo: "https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg",
+    category: "Web Development",
+    border: "#F05340",
+  },
 ];
 
 export default Data;
